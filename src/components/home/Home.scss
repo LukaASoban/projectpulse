@@ -1,0 +1,163 @@
+$bg-color: #4242e6;
+$glitch-bg-color: $bg-color;
+
+.home-page {
+  background: rgb(4, 43, 106);
+  background: linear-gradient(
+    135deg,
+    rgba(4, 43, 106, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.outer-container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.inner-container {
+  display: flex;
+  justify-content: center;
+}
+.video-overlay {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  // left: 0px;
+  // top: 0px;
+
+  // padding: 5px 5px;
+  // font-size: 20px;
+  // font-family: Helvetica;
+  // color: #fff;
+}
+video {
+  width: 100%;
+  height: 100%;
+}
+
+// .logo {
+//   margin-top: 14%;
+//   height: 50%;
+//   width: 50%;
+// }
+
+.glitch {
+  position: relative;
+  color: rgb(137, 53, 53);
+  font-size: 80px;
+}
+
+.line {
+  &:not(:first-child) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @for $i from 1 through 10 {
+    &:nth-child(#{$i}) {
+      animation: clip 3000ms $i * -300ms linear infinite,
+        glitch#{$i} 500ms random(1000) * -1ms linear infinite;
+
+      @keyframes glitch#{$i} {
+        0% {
+          transform: translateX(0);
+        }
+        80% {
+          transform: translateX(0);
+          color: #fff;
+        }
+        85% {
+          transform: translateX(random(10) - 5px);
+          color: #4e9a26;
+        }
+        90% {
+          transform: translateX(random(10) - 5px);
+          color: #ac1212;
+        }
+        95% {
+          transform: translateX(random(10) - 5px);
+          color: #fff;
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+}
+
+@keyframes clip {
+  0% {
+    clip-path: polygon(0 100%, 100% 100%, 100% 120%, 0 120%);
+  }
+
+  100% {
+    clip-path: polygon(0 -20%, 100% -20%, 100% 0%, 0 0);
+  }
+}
+
+.home-title {
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+.home-title:before,
+.home-title:after {
+  content: "Octic changed the world, forever...";
+  position: absolute;
+}
+
+.home-title:before {
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+  2%,
+  64% {
+    transform: translate(2px, -2px);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+}
+
+.home-title:after {
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+  2%,
+  64% {
+    transform: translate(-2px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(-22px, 5px) skew(21deg);
+  }
+}
