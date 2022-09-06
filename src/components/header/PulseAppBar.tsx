@@ -179,7 +179,6 @@ const PulseAppBar = () => {
                   autoplay
                   loop
                   src={headphones}
-                  // src="https://assets7.lottiefiles.com/packages/lf20_q7hi5tal.json"
                   style={{ height: "50px" }}
                 ></Player>
               </Button>

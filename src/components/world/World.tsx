@@ -39,15 +39,20 @@ function World() {
       >
         Characters
       </Typography>
-      <Box maxWidth={"90vw"}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          textAlign: "center",
+          alignContent: "center",
+          alignItems: "center",
+        }}
+      >
         <Masonry
           columns={{ xs: 1, sm: 2, md: 3 }}
           spacing={8}
           sx={{
             backgroundColor: "transparent",
-            marginLeft: "5%",
-            marginRight: "5%",
-            marginBottom: "5%",
             alignContent: "center",
           }}
         >
@@ -84,7 +89,6 @@ function World() {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button size="small">Share</Button>
                   <Button size="small">Learn More</Button>
                 </CardActions>
               </Card>

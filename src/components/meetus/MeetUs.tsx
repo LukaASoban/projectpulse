@@ -21,24 +21,33 @@ function MeetUs() {
         paddingTop: "100px",
       }}
     >
-      <Box m={5}>
-        <Box marginBottom={"50px"}>
-          <Typography
-            className="meet-title"
-            fontFamily={"Share Tech Mono"}
-            variant="h3"
-            color="white"
-          >
-            Meet Us
-          </Typography>
-        </Box>
+      <Box ml={5}>
+        <Typography
+          className="meet-title"
+          fontFamily={"Share Tech Mono"}
+          variant="h3"
+          color="white"
+        >
+          Meet Us
+        </Typography>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignContent: "center",
+          alignItems: "center",
+        }}
+      >
         <Masonry
-          columns={{ xs: 1, sm: 2, md: 3 }}
+          columns={{ xs: 1, md: 2, lg: 3 }}
           spacing={8}
           sx={{
             backgroundColor: "transparent",
+            display: "flex",
+            justifyContent: "center",
             alignContent: "center",
-            alignSelf: "center",
+            alignItems: "center",
           }}
         >
           {creators.map((member) => (
@@ -61,12 +70,19 @@ function MeetUs() {
           ))}
         </Masonry>
       </Box>
-      <Box m={5}>
-        <Box marginBottom={"50px"}>
-          <Typography fontFamily={"Share Tech Mono"} variant="h4" color="white">
-            Meet the Cast
-          </Typography>
-        </Box>
+      <Box ml={5}>
+        <Typography fontFamily={"Share Tech Mono"} variant="h4" color="white">
+          Meet the Cast
+        </Typography>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignContent: "center",
+          alignItems: "center",
+        }}
+      >
         <Masonry
           columns={{ xs: 1, md: 2, lg: 3 }}
           spacing={8}

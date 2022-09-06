@@ -1,17 +1,6 @@
 import "./Episodes.scss";
-import {
-  Box,
-  Typography,
-  Stack,
-  Paper,
-  Card,
-  CardMedia,
-  CardContent,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import Footer from "../footer/Footer";
-import { AnimationOnScroll } from "react-animation-on-scroll";
 import ep1 from "../../assets/images/episodeCovers/episode1.png";
 import ep2 from "../../assets/images/episodeCovers/episode2.png";
 import ep3 from "../../assets/images/episodeCovers/episode3.png";
