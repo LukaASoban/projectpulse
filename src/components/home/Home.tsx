@@ -1,4 +1,11 @@
-import { Box, Paper, Stack, Typography } from "@mui/material";
+import {
+  Box,
+  Paper,
+  Stack,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import "./Home.scss";
 
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
@@ -32,18 +39,30 @@ function Home() {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
+  const theme = useTheme();
+  const isMobileScreen = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <div className="home-page">
-      <div className="outer-container">
-        <div className="inner-container">
-          <div className="video-overlay">
-            <Logo style={{ maxWidth: "100%" }}></Logo>
-          </div>
-          <video autoPlay loop muted id="home-video">
+      {isMobileScreen ? (
+        <div className="container">
+          <video height={"740px"} autoPlay loop muted id="home-video">
             <source src={pulseHomeVideo} type="video/mp4" />
           </video>
         </div>
-      </div>
+      ) : (
+        <video
+          height={"100%"}
+          width={"100%"}
+          autoPlay
+          loop
+          muted
+          id="home-video"
+        >
+          <source src={pulseHomeVideo} type="video/mp4" />
+        </video>
+      )}
 
       <Box>
         <Box>
