@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/projectpulse/static/css/main.836e187d.css",
+    "main.css": "/projectpulse/static/css/main.be4ae0e4.css",
     "main.js": "/projectpulse/static/js/main.ceb61dd8.js",
     "static/js/787.04a6aa7b.chunk.js": "/projectpulse/static/js/787.04a6aa7b.chunk.js",
     "static/media/pulseHomeVideo.mp4": "/projectpulse/static/media/pulseHomeVideo.12690f54bbdd35f47f47.mp4",
@@ -39,12 +39,12 @@
     "static/media/RobMilton-MarkHall.webp": "/projectpulse/static/media/RobMilton-MarkHall.9bc36d341f93837a393f.webp",
     "static/media/JessicaElaineJacobs-KaylaBryant.webp": "/projectpulse/static/media/JessicaElaineJacobs-KaylaBryant.a73e03230292576b7ae3.webp",
     "index.html": "/projectpulse/index.html",
-    "main.836e187d.css.map": "/projectpulse/static/css/main.836e187d.css.map",
+    "main.be4ae0e4.css.map": "/projectpulse/static/css/main.be4ae0e4.css.map",
     "main.ceb61dd8.js.map": "/projectpulse/static/js/main.ceb61dd8.js.map",
     "787.04a6aa7b.chunk.js.map": "/projectpulse/static/js/787.04a6aa7b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.836e187d.css",
+    "static/css/main.be4ae0e4.css",
     "static/js/main.ceb61dd8.js"
   ]
 }
