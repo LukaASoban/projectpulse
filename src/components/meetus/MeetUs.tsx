@@ -23,8 +23,13 @@ function MeetUs() {
     >
       <Box m={5}>
         <Box marginBottom={"50px"}>
-          <Typography fontFamily={"Share Tech Mono"} variant="h3" color="white">
-            Meet the Creators
+          <Typography
+            className="meet-title"
+            fontFamily={"Share Tech Mono"}
+            variant="h3"
+            color="white"
+          >
+            Meet Us
           </Typography>
         </Box>
         <Masonry

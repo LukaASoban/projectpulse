@@ -7,6 +7,8 @@ import {
   Card,
   CardMedia,
   CardContent,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import Footer from "../footer/Footer";
 import { AnimationOnScroll } from "react-animation-on-scroll";
@@ -17,6 +19,9 @@ import EpisodeCard from "./EpisodeCard";
 import Grid2 from "@mui/material/Unstable_Grid2";
 
 function Episodes() {
+  const theme = useTheme();
+  const isMobileScreen = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <Box
       className="episodes-body"
@@ -30,14 +35,14 @@ function Episodes() {
           <Typography
             className="episodes-title"
             fontFamily={"Share Tech Mono"}
-            variant="h1"
+            variant="h3"
             color="white"
           >
             Episodes
           </Typography>
         </Box>
         <Box marginBottom={"50px"}>
-          <Grid2 container spacing={2}>
+          <Grid2 container spacing={4}>
             <Grid2 xs={12} md={6} lg={4}>
               <EpisodeCard
                 image={ep1}

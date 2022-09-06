@@ -32,7 +32,7 @@ function About() {
           <Typography
             className="about-title"
             fontFamily={"Share Tech Mono"}
-            variant="h1"
+            variant="h3"
             color="white"
           >
             Synopsis

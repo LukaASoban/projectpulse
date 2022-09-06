@@ -21,6 +21,8 @@ function World() {
       sx={{
         height: "100%",
         textAlign: "center",
+        alignContent: "center",
+        alignItems: "center",
         background:
           "linear-gradient(0deg,rgba(0, 218, 255, 1) 0%,rgba(0, 0, 0, 1) 100%)",
       }}

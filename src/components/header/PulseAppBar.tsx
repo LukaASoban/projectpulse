@@ -56,18 +56,22 @@ const PulseAppBar = () => {
   const handleMenuClick = (page: string) => {
     const pageName = page.toLowerCase();
     navigate(pageName, { replace: true });
+    handleCloseNavMenu();
   };
 
   const theme = useTheme();
 
   const isMobileScreen = useMediaQuery(theme.breakpoints.down("md"));
 
+  React.useEffect(() => {
+    navigate("/", { replace: true });
+  }, []);
+
   return (
     <AppBar
       position="absolute"
       sx={{
         boxShadow: "none",
-        // backgroundColor: location.pathname !== "/" ? "black" : "transparent",
         backgroundColor: "transparent",
       }}
     >
