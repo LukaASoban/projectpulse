@@ -15,6 +15,7 @@ function App() {
       <PulseAppBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="projectpulse" element={<Home />} />
         <Route path="world" element={<World />} />
         <Route path="meet%20us" element={<MeetUs />} />
         <Route path="about" element={<About />} />
