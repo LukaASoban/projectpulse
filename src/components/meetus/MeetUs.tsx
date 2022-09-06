@@ -70,7 +70,7 @@ function MeetUs() {
           ))}
         </Masonry>
       </Box>
-      <Box ml={5}>
+      <Box ml={5} mt={5} mb={5}>
         <Typography fontFamily={"Share Tech Mono"} variant="h4" color="white">
           Meet the Cast
         </Typography>
