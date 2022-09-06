@@ -14,6 +14,8 @@ import { Stack } from "@mui/system";
 import { characters } from "../../data/characters";
 import Footer from "../footer/Footer";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { Link, Route, Routes } from "react-router-dom";
+import CharacterDialog from "./CharacterDialog";
 
 function World() {
   return (
@@ -58,6 +60,7 @@ function World() {
         >
           {characters.map((character) => (
             <AnimationOnScroll
+              key={character.name}
               initiallyVisible
               animateIn="animate__pulse"
               animateOnce={true}
@@ -89,7 +92,9 @@ function World() {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button size="small">Learn More</Button>
+                  <Link to={`${character.name}`}>
+                    <Button size="small">Learn More</Button>
+                  </Link>
                 </CardActions>
               </Card>
             </AnimationOnScroll>
@@ -98,6 +103,9 @@ function World() {
       </Box>
 
       <Footer />
+      <Routes>
+        <Route path=":character" element={<CharacterDialog />} />
+      </Routes>
     </Box>
   );
 }

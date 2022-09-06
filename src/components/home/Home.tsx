@@ -10,6 +10,7 @@ import "./Home.scss";
 
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
 import pulseHomeVideo from "../../assets/videos/pulseHomeVideo.mp4";
+import pulseHomeVideoCompressed from "../../assets/videos/pulseHomeVideo-compressed.mp4";
 import PulseArena from "../../assets/images/episodeCovers/episode1.png";
 import Hospital from "../../assets/images/episodeCovers/episode2.png";
 import Hades from "../../assets/images/episodeCovers/episode3.png";
@@ -48,7 +49,7 @@ function Home() {
       {isMobileScreen ? (
         <div className="container">
           <video height={"740px"} autoPlay loop muted id="home-video">
-            <source src={pulseHomeVideo} type="video/mp4" />
+            <source src={pulseHomeVideoCompressed} type="video/mp4" />
           </video>
         </div>
       ) : (
@@ -60,7 +61,7 @@ function Home() {
           muted
           id="home-video"
         >
-          <source src={pulseHomeVideo} type="video/mp4" />
+          <source src={pulseHomeVideoCompressed} type="video/mp4" />
         </video>
       )}
 
@@ -102,8 +103,8 @@ function Home() {
                 alignContent: "center",
                 alignItems: "center",
               }}
-              marginLeft={"20%"}
-              marginRight={"20%"}
+              marginLeft={isMobileScreen ? "4%" : "20%"}
+              marginRight={isMobileScreen ? "4%" : "20%"}
             >
               <Typography
                 color={"white"}
