@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/projectpulse/static/css/main.b69da319.css",
-    "main.js": "/projectpulse/static/js/main.3831b3c5.js",
+    "main.css": "/projectpulse/static/css/main.a2a9d224.css",
+    "main.js": "/projectpulse/static/js/main.818f949f.js",
     "static/js/787.04a6aa7b.chunk.js": "/projectpulse/static/js/787.04a6aa7b.chunk.js",
     "static/media/pulseHomeVideo.mp4": "/projectpulse/static/media/pulseHomeVideo.12690f54bbdd35f47f47.mp4",
     "static/media/joe-kato.jpg": "/projectpulse/static/media/joe-kato.e7f5fc7a6f10398f7dcb.jpg",
@@ -39,12 +39,12 @@
     "static/media/RobMilton-MarkHall.webp": "/projectpulse/static/media/RobMilton-MarkHall.9bc36d341f93837a393f.webp",
     "static/media/JessicaElaineJacobs-KaylaBryant.webp": "/projectpulse/static/media/JessicaElaineJacobs-KaylaBryant.a73e03230292576b7ae3.webp",
     "index.html": "/projectpulse/index.html",
-    "main.b69da319.css.map": "/projectpulse/static/css/main.b69da319.css.map",
-    "main.3831b3c5.js.map": "/projectpulse/static/js/main.3831b3c5.js.map",
+    "main.a2a9d224.css.map": "/projectpulse/static/css/main.a2a9d224.css.map",
+    "main.818f949f.js.map": "/projectpulse/static/js/main.818f949f.js.map",
     "787.04a6aa7b.chunk.js.map": "/projectpulse/static/js/787.04a6aa7b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b69da319.css",
-    "static/js/main.3831b3c5.js"
+    "static/css/main.a2a9d224.css",
+    "static/js/main.818f949f.js"
   ]
 }
