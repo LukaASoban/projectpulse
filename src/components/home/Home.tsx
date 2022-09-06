@@ -3,19 +3,24 @@ import "./Home.scss";
 
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
 import pulseHomeVideo from "../../assets/videos/pulseHomeVideo.mp4";
-import CyberCity from "../../assets/images/cyberCity.jpeg";
 import PulseArena from "../../assets/images/episodeCovers/episode1.png";
+import Hospital from "../../assets/images/episodeCovers/episode2.png";
+import Hades from "../../assets/images/episodeCovers/episode3.png";
 import Carousel from "react-material-ui-carousel";
 import Footer from "../footer/Footer";
 
 var itemsForCarousel = [
   {
-    name: "Cyber City",
-    url: CyberCity,
+    name: "Episode 2",
+    url: Hospital,
   },
   {
     name: "Pulse Arena",
     url: PulseArena,
+  },
+  {
+    name: "Hades",
+    url: Hades,
   },
 ];
 
@@ -193,22 +198,28 @@ function Home() {
           </Paper>
         </Box>
       </Box>
-      <Carousel interval={4000} sx={{ width: "100%" }}>
-        {itemsForCarousel.map((item, i) => (
-          <ItemForCarousel key={i} item={item} />
-        ))}
-      </Carousel>
+      <Box
+        sx={{
+          display: "flex",
+          alignContent: "center",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Carousel interval={4000} sx={{ width: "100vw" }}>
+          {itemsForCarousel.map((item, i) => (
+            <ItemForCarousel key={i} item={item} />
+          ))}
+        </Carousel>
+      </Box>
+
       <Footer />
     </div>
   );
 }
 
 function ItemForCarousel(props: any) {
-  return (
-    <Box sx={{ width: "100%", height: "100vh" }}>
-      <img width={"100%"} height={"100%"} src={props.item.url}></img>
-    </Box>
-  );
+  return <img width={"100%"} src={props.item.url}></img>;
 }
 
 export default Home;

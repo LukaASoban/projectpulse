@@ -2,7 +2,6 @@ import { Masonry } from "@mui/lab";
 import {
   Typography,
   Box,
-  Paper,
   Card,
   Button,
   CardActions,
@@ -10,13 +9,9 @@ import {
   CardHeader,
   CardMedia,
   Chip,
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
 } from "@mui/material";
 import { Stack } from "@mui/system";
 import { characters } from "../../data/characters";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Footer from "../footer/Footer";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
@@ -55,11 +50,14 @@ function World() {
           }}
         >
           {characters.map((character) => (
-            <AnimationOnScroll animateIn="animate__fadeIn" animatePreScroll>
+            <AnimationOnScroll
+              initiallyVisible
+              animateIn="animate__pulse"
+              animateOnce={true}
+            >
               <Card elevation={18} sx={{ minWidth: 345, textAlign: "left" }}>
                 <CardMedia
                   component="img"
-                  height="240"
                   image={character.image}
                   alt={character.name}
                 />

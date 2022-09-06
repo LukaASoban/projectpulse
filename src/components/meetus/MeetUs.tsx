@@ -5,14 +5,8 @@ import {
   Card,
   CardMedia,
   CardHeader,
-  Stack,
-  Chip,
   CardContent,
-  CardActions,
-  Button,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
+  Link,
 } from "@mui/material";
 import Footer from "../footer/Footer";
 import { Masonry } from "@mui/lab";
@@ -46,16 +40,18 @@ function MeetUs() {
             <Card elevation={18} sx={{ minWidth: 345, textAlign: "left" }}>
               <CardMedia
                 component="img"
-                height="240"
+                // height="240"
                 image={member.image}
                 alt={member.name}
               />
               <CardHeader title={member.name} subheader={member.title} />
-              <CardContent>
-                <Typography variant="body2" color="text.secondary">
-                  {member.aboutMe}
-                </Typography>
-              </CardContent>
+              {member.aboutMe && (
+                <CardContent>
+                  <Typography variant="body2" color="text.secondary">
+                    {member.aboutMe}
+                  </Typography>
+                </CardContent>
+              )}
             </Card>
           ))}
         </Masonry>
@@ -67,7 +63,7 @@ function MeetUs() {
           </Typography>
         </Box>
         <Masonry
-          columns={{ xs: 1, sm: 2, md: 3 }}
+          columns={{ xs: 1, md: 2, lg: 3 }}
           spacing={8}
           sx={{
             backgroundColor: "transparent",
@@ -75,21 +71,19 @@ function MeetUs() {
             alignSelf: "center",
           }}
         >
-          {creators.map((member) => (
-            <Card elevation={18} sx={{ minWidth: 345, textAlign: "left" }}>
-              <CardMedia
-                component="img"
-                height="240"
-                image={member.image}
-                alt={member.name}
-              />
-              <CardHeader title={member.name} subheader={member.title} />
-              <CardContent>
-                <Typography variant="body2" color="text.secondary">
-                  {member.aboutMe}
-                </Typography>
-              </CardContent>
-            </Card>
+          {cast.map((member) => (
+            <Link href={member.link} target="_blank" rel="noopener">
+              <Card elevation={18} sx={{ minWidth: 345, textAlign: "left" }}>
+                <CardMedia
+                  component="img"
+                  // height={"350px"}
+                  // width={"50%"}
+                  image={member.image}
+                  alt={member.name}
+                />
+                <CardHeader title={member.name} subheader={member.character} />
+              </Card>
+            </Link>
           ))}
         </Masonry>
       </Box>

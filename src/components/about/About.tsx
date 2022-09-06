@@ -35,7 +35,7 @@ function About() {
             variant="h1"
             color="white"
           >
-            About
+            Synopsis
           </Typography>
         </Box>
         <Box marginBottom={"50px"}>

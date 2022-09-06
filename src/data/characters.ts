@@ -1,4 +1,22 @@
-import PulseGirl from "../assets/images/girlPulse.png";
+import Derrick from "../assets/images/characters/derrickWalker.png";
+import Barry from "../assets/images/characters/barryWatt.png";
+import Brock from "../assets/images/characters/brock.png";
+import Catherine from "../assets/images/characters/catherineWalker-edited.png";
+import Emma from "../assets/images/characters/emma.png";
+
+import Garret from "../assets/images/characters/garret-edited.png";
+
+import Kato from "../assets/images/characters/katoAtadori.png";
+
+import Kayla from "../assets/images/characters/kaylaBryant.png";
+
+import MarkBolt from "../assets/images/characters/markBolt-edited.png";
+
+import MarkHall from "../assets/images/characters/markHall.png";
+import Mia from "../assets/images/characters/miaClark-edited.png";
+import Nolewood from "../assets/images/characters/nolewood.png";
+import PaulWalker from "../assets/images/characters/paulWalker-edited.png";
+import Hades from "../assets/images/characters/hades.png";
 
 interface Character {
   name: string;
@@ -17,7 +35,7 @@ export const characters: Character[] = [
     name: "Derrick Walker",
     subHeader: "Main Protagonist",
     age: 15,
-    image: PulseGirl,
+    image: Derrick,
     firstSeen: "Episode 1",
     description: `Derrick Walker is a kid from Atlanta, GA. Ever since he was a young child, he would listen
         to Pulse tournaments on his parents TV. He is the last person on earth who is blind. Blindness, along 
@@ -29,7 +47,7 @@ export const characters: Character[] = [
     name: "Mia Clark",
     subHeader: "Friend of Derrick",
     age: 17,
-    image: PulseGirl,
+    image: Mia,
     firstSeen: "Episode 3",
     description: `Mia, an only child, was born into
        a loving, middle class family with little to complai
@@ -44,7 +62,7 @@ export const characters: Character[] = [
     name: "Kato Atadori",
     subHeader: "Friend of Derrick",
     age: 22,
-    image: PulseGirl,
+    image: Kato,
     firstSeen: "Episode 1",
     description: `Kato Atadori, age 22, was born in the city of Atlanta, Georgia. And from the very 
     moment he could walk, he claimed the city for his own. As a third generation Japanese American, 
@@ -55,10 +73,31 @@ export const characters: Character[] = [
     `,
   },
   {
+    name: "Brent Nolewood",
+    subHeader: "CEO of Octic",
+    age: 45,
+    image: Nolewood,
+    firstSeen: "Episode 1",
+    description: `The elusive CEO of Octic, the company that invented Project Pulse. He keeps out of the press
+    as much as he can. No one knows how he looks like.
+        ...`,
+  },
+  {
+    name: "Mark Bolt",
+    subHeader: "Lead Shout-Caster for Project Pulse",
+    age: 45,
+    image: MarkBolt,
+    firstSeen: "Episode 1",
+    description: `Mark Bolt is the lead shout-caster and has been the sole caster for the past few years since Octic released Project Pulse.
+    No one can match his energy. He came out of no-where and ever since his debut, people have taken his voice and create multiple AI versions of his persona.
+    You can find these AI versions of Mark Bolt all around the country.
+        ...`,
+  },
+  {
     name: "Paul Walker",
     subHeader: "Father of Derrick",
     age: 53,
-    image: PulseGirl,
+    image: PaulWalker,
     firstSeen: "Episode 1",
     description: `Paul Walker, age 53, grew up in a time before the world flipped on its head. 
     He lived a normal life as an electrical engineer until he met the woman who charmed the very 
@@ -74,7 +113,7 @@ export const characters: Character[] = [
     name: "Catherine Walker",
     subHeader: "Mother of Derrick",
     age: 48,
-    image: PulseGirl,
+    image: Catherine,
     firstSeen: "Episode 1",
     description: `Catherine Walker, now deceased, would have been 48 years old in the year our show takes
      place. Born with a hereditary disease, Catherine spent her life confined to a wheelchair, 
@@ -88,7 +127,7 @@ export const characters: Character[] = [
     name: "Emma",
     subHeader: "Derrick's AI Companion",
     age: 0,
-    image: PulseGirl,
+    image: Emma,
     firstSeen: "Episode 1",
     description: `Emma, an artificial intelligence generated on the day Derrick (the main protagonist) 
     first created an Octic account, is an often sassy and playful companion to her human counterpart, 
@@ -105,7 +144,7 @@ export const characters: Character[] = [
     name: "Barry Watt",
     subHeader: "Shadows of Chicago",
     age: 21,
-    image: PulseGirl,
+    image: Barry,
     firstSeen: "Episode 2",
     description: `Born in Chicago, Illinois into a family of twelve, Barry Watt enjoyed a uniquely chaotic
      and surprisingly loving childhood. His parents cared for Barry and his siblings with all their hearts, 
@@ -117,8 +156,8 @@ export const characters: Character[] = [
   {
     name: "Kayla Bryant",
     subHeader: "Shadows of Chicago",
-    age: 0,
-    image: PulseGirl,
+    age: 21,
+    image: Kayla,
     firstSeen: "Episode 2",
     description: `Born onto the streets of Chicago, Illinois, Kayla Bryant knew only hardship from a young age. 
     Her parents, whoever they were, didn’t want her and apparently neither did anyone else as she got shipped 
@@ -132,7 +171,7 @@ export const characters: Character[] = [
     name: "Mark Hall",
     subHeader: "Piedmont Park Pulse Court Guard",
     age: 31,
-    image: PulseGirl,
+    image: MarkHall,
     firstSeen: "Episode 2",
     description: `Often mistaken as a simple man, Mark Hall, 31, is the definition of strong, quiet, 
     and blunt. He finds little interest in small talk, seeing it as a waste of effort, especially 
@@ -146,7 +185,7 @@ export const characters: Character[] = [
     name: "Garrett Gilheart",
     subHeader: "Pulse Champion",
     age: 28,
-    image: PulseGirl,
+    image: Garret,
     firstSeen: "Episode 1",
     description: `A genius born in the middle of a family of five children, Garrett Gilheart 
     spent his young life yearning to be heard, and in doing so, developed a flair for the dramatic. 
@@ -159,7 +198,7 @@ export const characters: Character[] = [
     name: "Brock Holdwin",
     subHeader: "Pulse Runner-Up",
     age: 29,
-    image: PulseGirl,
+    image: Brock,
     firstSeen: "Episode 1",
     description: `Brock Holdwin, a gruff, hardy young man in his early twenties, 
     is the embodiment of perseverance. When he was first introduced to Pulse, a 
@@ -174,7 +213,7 @@ export const characters: Character[] = [
     name: "Hades",
     subHeader: "God",
     age: 1800000,
-    image: PulseGirl,
+    image: Hades,
     firstSeen: "Episode 3",
     description: `Hades, lord of the Underworld, bears a close resemblance to the traditional Greek God. 
     Unlike many modern interpretations, Hades is not a villain. Bound by duty and obligation, Hades 
