@@ -174,14 +174,29 @@ const PulseAppBar = () => {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Listen Now">
-              <Button variant="text" size="large" onClick={handleOpenUserMenu}>
-                <Player
-                  autoplay
-                  loop
-                  src={headphones}
-                  style={{ height: "50px" }}
-                ></Player>
-              </Button>
+              {isMobileScreen ? (
+                <Button
+                  variant="contained"
+                  color="secondary"
+                  size="medium"
+                  onClick={handleOpenUserMenu}
+                >
+                  Listen Now
+                </Button>
+              ) : (
+                <Button
+                  variant="text"
+                  size="large"
+                  onClick={handleOpenUserMenu}
+                >
+                  <Player
+                    autoplay
+                    loop
+                    src={headphones}
+                    style={{ height: "50px" }}
+                  ></Player>
+                </Button>
+              )}
             </Tooltip>
 
             <Menu

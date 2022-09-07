@@ -6,7 +6,6 @@ import World from "./components/world/World";
 import MeetUs from "./components/meetus/MeetUs";
 import About from "./components/about/About";
 import Episodes from "./components/episodes/Episodes";
-import CharacterDialog from "./components/world/CharacterDialog";
 
 function App() {
   return (
