@@ -8,8 +8,6 @@ import {
 } from "@mui/material";
 import "./Home.scss";
 
-import { ReactComponent as Logo } from "../../assets/images/logo.svg";
-import pulseHomeVideo from "../../assets/videos/pulseHomeVideo.mp4";
 import pulseHomeVideoCompressed from "../../assets/videos/pulseHomeVideo-compressed.mp4";
 import PulseArena from "../../assets/images/episodeCovers/episode1.png";
 import Hospital from "../../assets/images/episodeCovers/episode2.png";
