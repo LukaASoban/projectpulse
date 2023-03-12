@@ -51,7 +51,11 @@ function MeetUs() {
           }}
         >
           {creators.map((member) => (
-            <Card elevation={18} sx={{ minWidth: 345, textAlign: "left" }}>
+            <Card
+              key={member.name}
+              elevation={18}
+              sx={{ minWidth: 345, textAlign: "left" }}
+            >
               <CardMedia
                 component="img"
                 // height="240"
