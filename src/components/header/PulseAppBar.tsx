@@ -8,8 +8,10 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuIcon from "@mui/icons-material/Menu";
-import { AppBar, MenuItem, useMediaQuery, useTheme } from "@mui/material";
+import { AppBar, Grid, MenuItem, useMediaQuery, useTheme } from "@mui/material";
 import Logo from "../../assets/images/logo.svg";
+import KickStarterLogo from "../../assets/images/ksWhite.png";
+import JustLauched from "../../assets/images/justLaunched.png";
 
 import GooglePodcasts from "../../assets/images/googlepodcasts.svg";
 import ApplePodcasts from "../../assets/images/applepodcasts.svg";
@@ -20,7 +22,8 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import headphones from "../../assets/lottie/headphones.json";
 import { useLocation, useNavigate } from "react-router-dom";
 
-const pages = ["World", "Episodes", "Meet Us", "About"];
+//const pages = ["World", "Episodes", "Meet Us", "About"];
+const pages = ["Coming Soon "];
 const platform = [
   "Spotify",
   "Apple Podcasts",
@@ -173,7 +176,8 @@ const PulseAppBar = () => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Listen Now">
+            {/** TODO - ADD BACK IN */}
+            {/* <Tooltip title="Listen Now">
               {isMobileScreen ? (
                 <Button
                   variant="contained"
@@ -231,7 +235,7 @@ const PulseAppBar = () => {
                   )}
                 </MenuItem>
               ))}
-            </Menu>
+            </Menu> */}
           </Box>
         </Toolbar>
       </Container>
