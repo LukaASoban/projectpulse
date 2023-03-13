@@ -47,9 +47,9 @@ function Home() {
 
   return (
     <div className="home-page">
-      {isMobileScreen ? (
+      {/* {isMobileScreen ? (
         <div className="container">
-          <video height={"740px"} autoPlay loop muted id="home-video">
+          <video height={"440px"} autoPlay loop muted id="home-video">
             <source src={pulseHomeVideoCompressed} type="video/mp4" />
           </video>
         </div>
@@ -64,7 +64,17 @@ function Home() {
         >
           <source src={pulseHomeVideoCompressed} type="video/mp4" />
         </video>
-      )}
+      )} */}
+      <video
+        className="desktop-video"
+        autoPlay
+        loop
+        muted
+        playsInline
+        id="home-video"
+      >
+        <source src={pulseHomeVideoCompressed} type="video/mp4" />
+      </video>
 
       <Button
         variant="text"
