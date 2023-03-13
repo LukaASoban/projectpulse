@@ -1,12 +1,25 @@
-import { Box, Stack, IconButton, Typography } from "@mui/material";
+import {
+  Box,
+  Stack,
+  IconButton,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
 function Footer() {
+  const theme = useTheme();
+  const isMobileScreen = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <Box
       sx={{
-        backgroundColor: "transparent",
+        marginTop: "-1%",
+        backgroundColor: isMobileScreen ? "transparent" : "rgb(4, 43, 106)",
+        background: isMobileScreen
+          ? "transparent"
+          : "linear-gradient(135deg, rgba(4, 43, 106, 1) 0%, rgba(0, 0, 0, 1) 100%)",
         paddingTop: "2%",
         textAlign: "center",
       }}

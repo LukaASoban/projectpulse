@@ -57,7 +57,7 @@ const PulseAppBar = () => {
   };
 
   const handleMenuClick = (page: string) => {
-    // TODO - Add this back in
+    // TODO - Add this
     // const pageName = page.toLowerCase();
     // navigate(pageName, { replace: true });
     // handleCloseNavMenu();
