@@ -15,8 +15,6 @@ import Hospital from "../../assets/images/episodeCovers/episode2.png";
 import Hades from "../../assets/images/episodeCovers/episode3.png";
 import Carousel from "react-material-ui-carousel";
 import Footer from "../footer/Footer";
-import KickStarterLogo from "../../assets/images/ksWhite.png";
-import JustLaunched from "../../assets/images/justLaunched-Flip.png";
 
 var itemsForCarousel = [
   {
@@ -76,32 +74,6 @@ function Home() {
         <source src={pulseHomeVideoCompressed} type="video/mp4" />
       </video>
 
-      <Button
-        variant="text"
-        sx={{
-          position: "fixed",
-          bottom: -43,
-          left: 0,
-          minWidth: 0,
-          padding: 0,
-          "&:hover": {
-            backgroundColor: "transparent",
-          },
-        }}
-        onClick={() => {
-          window.open(
-            "https://www.kickstarter.com/projects/projectpulse/1227991127?ref=8z08kx&token=297a34a5",
-            "_blank"
-          );
-        }}
-      >
-        <img
-          src={JustLaunched}
-          alt="Contribute Now"
-          //height={100}
-          style={{ display: "block" }}
-        />
-      </Button>
       {/* <Box>
         <Box>
           <Paper
