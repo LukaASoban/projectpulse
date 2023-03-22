@@ -54,7 +54,7 @@ function MeetUs() {
             <Card
               key={member.name}
               elevation={18}
-              sx={{ minWidth: 345, textAlign: "left" }}
+              sx={{ width: "100%", textAlign: "left", overflow: "hidden" }}
             >
               <CardMedia
                 component="img"
@@ -98,7 +98,10 @@ function MeetUs() {
         >
           {cast.map((member) => (
             <Link href={member.link} target="_blank" rel="noopener">
-              <Card elevation={18} sx={{ minWidth: 345, textAlign: "left" }}>
+              <Card
+                elevation={18}
+                sx={{ width: "100%", textAlign: "left", overflow: "hidden" }}
+              >
                 <CardMedia
                   component="img"
                   // height={"350px"}
