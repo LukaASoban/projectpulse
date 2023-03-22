@@ -8,28 +8,25 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuIcon from "@mui/icons-material/Menu";
-import { AppBar, Grid, MenuItem, useMediaQuery, useTheme } from "@mui/material";
+import {
+  AppBar,
+  MenuItem,
+  useMediaQuery,
+  useTheme,
+  Link,
+  Divider,
+} from "@mui/material";
 import Logo from "../../assets/images/logo.svg";
-import KickStarterLogo from "../../assets/images/ksWhite.png";
-import JustLauched from "../../assets/images/justLaunched.png";
 
-import GooglePodcasts from "../../assets/images/googlepodcasts.svg";
 import ApplePodcasts from "../../assets/images/applepodcasts.svg";
-import PodcastAddict from "../../assets/images/podcastaddict.png";
 import Spotify from "../../assets/images/spotify.png";
 import "./PulseAppBar.scss";
 import { Player } from "@lottiefiles/react-lottie-player";
 import headphones from "../../assets/lottie/headphones.json";
 import { useLocation, useNavigate } from "react-router-dom";
 
-//const pages = ["World", "Episodes", "Meet Us", "About"];
-const pages = ["Coming Soon "];
-const platform = [
-  "Spotify",
-  "Apple Podcasts",
-  "Google Podcasts",
-  "Podcast Addict",
-];
+const pages = ["World", "Episodes", "Meet Us", "About"];
+const platform = ["Spotify", "Apple Podcasts", "Podbean", "Anywhere"];
 
 const PulseAppBar = () => {
   const navigate = useNavigate();
@@ -57,10 +54,23 @@ const PulseAppBar = () => {
   };
 
   const handleMenuClick = (page: string) => {
-    // TODO - Add this
-    // const pageName = page.toLowerCase();
-    // navigate(pageName, { replace: true });
-    // handleCloseNavMenu();
+    const pageName = page.toLowerCase();
+    navigate(pageName, { replace: true });
+    handleCloseNavMenu();
+  };
+
+  // Returns the href string to the platform
+  const returnPlatformURL = (platform: string) => {
+    switch (platform) {
+      case "Spotify":
+        return "https://open.spotify.com/show/0gH15C6yLP9uMKcKpiXr84?si=a314c01a67c94212";
+      case "Apple Podcasts":
+        return "https://podcasts.apple.com/us/podcast/project-pulse/id1677163209";
+      case "Podbean":
+        return "https://projectpulse.podbean.com/";
+      default:
+        return;
+    }
   };
 
   const theme = useTheme();
@@ -177,8 +187,7 @@ const PulseAppBar = () => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            {/** TODO - ADD BACK IN */}
-            {/* <Tooltip title="Listen Now">
+            <Tooltip title="Listen Now">
               {isMobileScreen ? (
                 <Button
                   variant="contained"
@@ -221,22 +230,38 @@ const PulseAppBar = () => {
               onClose={handleCloseUserMenu}
             >
               {platform.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  {setting === "Spotify" && (
-                    <img src={Spotify} height={"48px"}></img>
-                  )}
-                  {setting === "Apple Podcasts" && (
-                    <img src={ApplePodcasts} height={"48px"}></img>
-                  )}
-                  {setting === "Google Podcasts" && (
-                    <img src={GooglePodcasts} height={"48px"}></img>
-                  )}
-                  {setting === "Podcast Addict" && (
-                    <img src={PodcastAddict} height={"48px"}></img>
-                  )}
-                </MenuItem>
+                <Link
+                  href={returnPlatformURL(setting)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  underline="none"
+                >
+                  <MenuItem key={setting}>
+                    {setting === "Spotify" && (
+                      <img src={Spotify} height={"48px"}></img>
+                    )}
+                    {setting === "Apple Podcasts" && (
+                      <img src={ApplePodcasts} height={"48px"}></img>
+                    )}
+                    {setting === "Podbean" && (
+                      <img
+                        src="https://fastfs1.podbean.com/site/images/badges/w600_1.png"
+                        alt="App download"
+                        height={"48px"}
+                      ></img>
+                    )}
+                    {setting === "Anywhere" && (
+                      <>
+                        <Divider />
+                        <Typography>
+                          Or wherever you get your podcasts!
+                        </Typography>
+                      </>
+                    )}
+                  </MenuItem>
+                </Link>
               ))}
-            </Menu> */}
+            </Menu>
           </Box>
         </Toolbar>
       </Container>

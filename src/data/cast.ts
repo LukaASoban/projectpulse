@@ -1,5 +1,6 @@
 import Jeremy from "../assets/images/jeremy.jpeg";
 import Luka from "../assets/images/luka.png";
+import Ryan from "../assets/images/ryan.png";
 import Nina from "../assets/images/actors/NinaNikolic-Mia.jpeg";
 import Joe from "../assets/images/actors/joe-kato.jpg";
 import Scott from "../assets/images/actors/ScottTippens-PaulWalker.jpeg";
@@ -29,7 +30,7 @@ export const creators: Creator[] = [
   {
     name: "Ryan Tippens",
     title: "Director and Audio Engineer",
-    image: Luka,
+    image: Ryan,
   },
   {
     name: "Luka Antolic-Soban",

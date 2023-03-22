@@ -35,7 +35,7 @@ function Episodes() {
             <Grid2 xs={12} md={6} lg={4}>
               <EpisodeCard
                 image={ep1}
-                showName="PROJECT PULSE E01"
+                showName="PROJECT PULSE E01+E02"
                 episodeTitle="The Streets of Atlanta"
                 description="Living in Atlanta, Georgia, Derrick finds himself thinking about the past again. 
                 Pulse is all he ever thinks about these days. As Derrick gets into a predicament, he manages to
@@ -45,7 +45,7 @@ function Episodes() {
             <Grid2 xs={12} md={6} lg={4}>
               <EpisodeCard
                 image={ep2}
-                showName="PROJECT PULSE E02"
+                showName="PROJECT PULSE E03-E04"
                 episodeTitle="Shadows of Chicago Part 1"
                 description="After spending some time with his sister, Derrick decides that enough is enough.
                 He's not going to let anything stop him from playing Project Pulse. Putting his feelings aside,
@@ -55,7 +55,7 @@ function Episodes() {
             <Grid2 xs={12} md={6} lg={4}>
               <EpisodeCard
                 image={ep3}
-                showName="PROJECT PULSE E03"
+                showName="PROJECT PULSE E05-E06"
                 episodeTitle="Shadows of Chicago Part 2"
                 description="As the formiddible battle between Kato and Derrick and the Shadows of Chicago intensifies, Derrick begins to question
                 his reality. What lies in store for Derrick after his first real pulse match ends?"
