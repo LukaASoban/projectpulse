@@ -15,8 +15,10 @@ import MarkBolt from "../assets/images/characters/markBolt-edited.png";
 import MarkHall from "../assets/images/characters/markHall.png";
 import Mia from "../assets/images/characters/miaClark-edited.png";
 import Nolewood from "../assets/images/characters/nolewood.png";
+import Nolewood2 from "../assets/images/characters/nolewood2.png";
 import PaulWalker from "../assets/images/characters/paulWalker-edited.png";
 import Hades from "../assets/images/characters/hades.png";
+import FaceBlur from "../assets/images/characters/faceBlur.png";
 
 export interface Character {
   name: string;
@@ -113,7 +115,7 @@ Kato is a calm and analytical presence. While he is effortlessly cool, sometimes
     name: "Brent Nolewood",
     subHeader: "CEO of Octic",
     age: 45,
-    image: Nolewood,
+    image: Nolewood2,
     firstSeen: "Episode 1",
     description: `The elusive CEO of Octic, the company that invented Project Pulse. He keeps out of the press
     as much as he can. No one knows how he looks like.

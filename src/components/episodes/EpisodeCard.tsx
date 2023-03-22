@@ -3,13 +3,8 @@ import {
   CardMedia,
   CardContent,
   Typography,
-  Box,
-  IconButton,
   useTheme,
 } from "@mui/material";
-import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
-import PlayArrowIcon from "@mui/icons-material/PlayArrow";
-import SkipNextIcon from "@mui/icons-material/SkipNext";
 
 interface EpisodeCardProps {
   showName: string;
@@ -19,7 +14,6 @@ interface EpisodeCardProps {
 }
 
 function EpisodeCard(props: EpisodeCardProps) {
-  const theme = useTheme();
   return (
     <Card
       sx={{
@@ -91,27 +85,6 @@ function EpisodeCard(props: EpisodeCardProps) {
           {props.description}
         </Typography>
       </CardContent>
-      <Box
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          alignContent: "center",
-          textAlign: "center",
-          justifyContent: "center",
-          pl: 1,
-          pb: 1,
-        }}
-      >
-        <IconButton aria-label="previous">
-          {theme.direction === "rtl" ? <SkipNextIcon /> : <SkipPreviousIcon />}
-        </IconButton>
-        <IconButton aria-label="play/pause">
-          <PlayArrowIcon sx={{ height: 38, width: 38 }} />
-        </IconButton>
-        <IconButton aria-label="next">
-          {theme.direction === "rtl" ? <SkipPreviousIcon /> : <SkipNextIcon />}
-        </IconButton>
-      </Box>
     </Card>
   );
 }

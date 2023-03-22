@@ -1,19 +1,10 @@
-import {
-  Box,
-  Button,
-  Paper,
-  Stack,
-  Typography,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
+import { useMediaQuery, useTheme } from "@mui/material";
 import "./Home.scss";
 
-import pulseHomeVideoCompressed from "../../assets/videos/pulseHomeVideo-compressed.mp4";
+import Logo from "../../assets/images/logo.png";
 import PulseArena from "../../assets/images/episodeCovers/episode1.png";
 import Hospital from "../../assets/images/episodeCovers/episode2.png";
 import Hades from "../../assets/images/episodeCovers/episode3.png";
-import Carousel from "react-material-ui-carousel";
 import Footer from "../footer/Footer";
 
 var itemsForCarousel = [
@@ -63,16 +54,7 @@ function Home() {
           <source src={pulseHomeVideoCompressed} type="video/mp4" />
         </video>
       )} */}
-      <video
-        className="desktop-video"
-        autoPlay
-        loop
-        muted
-        playsInline
-        id="home-video"
-      >
-        <source src={pulseHomeVideoCompressed} type="video/mp4" />
-      </video>
+      <img className="desktop-video" src={Logo} id="home-video"></img>
 
       {/* <Box>
         <Box>
