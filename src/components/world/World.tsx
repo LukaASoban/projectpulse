@@ -65,12 +65,17 @@ function World() {
               animateIn="animate__pulse"
               animateOnce={true}
             >
-              <Card elevation={18} sx={{ minWidth: 345, textAlign: "left" }}>
+              <Card
+                elevation={18}
+                sx={{ width: "100%", textAlign: "left", overflow: "hidden" }}
+              >
                 <CardMedia
                   component="img"
                   image={character.image}
                   alt={character.name}
+                  sx={{ maxHeight: "100%", maxWidth: "100%" }}
                 />
+
                 <CardHeader
                   title={character.name}
                   subheader={character.subHeader}
