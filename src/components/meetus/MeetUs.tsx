@@ -63,10 +63,10 @@ function MeetUs() {
                 alt={member.name}
               />
               <CardHeader title={member.name} subheader={member.title} />
-              {member.aboutMe && (
+              {member.contact && (
                 <CardContent>
                   <Typography variant="body2" color="text.secondary">
-                    {member.aboutMe}
+                    {member.contact}
                   </Typography>
                 </CardContent>
               )}

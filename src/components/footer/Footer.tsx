@@ -50,6 +50,13 @@ function Footer() {
           variant="subtitle2"
           color={"white"}
         >
+          contact@eyesshut.studio
+        </Typography>
+        <Typography
+          fontFamily={"Share Tech Mono"}
+          variant="subtitle2"
+          color={"white"}
+        >
           PROJECT PULSE™ IS THE PROPERTY OF © Eyes Shut Studios © 2022, ALL
           RIGHTS RESERVED.
         </Typography>

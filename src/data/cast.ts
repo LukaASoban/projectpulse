@@ -17,6 +17,7 @@ interface Creator {
   title: string;
   image: string;
   aboutMe?: string;
+  contact?: string;
 }
 
 interface CastMember {
@@ -31,11 +32,13 @@ export const creators: Creator[] = [
     name: "Ryan Tippens",
     title: "Director and Audio Engineer",
     image: Ryan,
+    contact: "ryan@eyesshut.studio",
   },
   {
     name: "Luka Antolic-Soban",
     title: "Producer",
     image: Luka,
+    contact: "luka@eyesshut.studio",
   },
   {
     name: "Jeremy Thomens",
